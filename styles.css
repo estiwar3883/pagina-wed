@@ -1,0 +1,175 @@
+/* ---------- Estilos globales ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: rgb(61, 58, 58);
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+#proyectos li,a{
+    text-decoration: none;
+    color:aliceblue;
+    padding: 10px;
+    margin: 0px;
+}
+#proyectos li,a:hover{
+    color: #ff0000;
+}
+/* ---------- Menú de navegación ---------- */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+
+}
+
+/* ---------- Secciones ---------- */
+section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+h2 {
+    color: red;
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------- Formulario ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+button:hover {
+    background: red;
+}
+
+/* ---------- Estilos para página de mascotas ---------- */
+.galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.galeria article {
+    background: rgb(10, 10, 10);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(116, 0, 0, 0.2);
+    width: 350px;
+    height: 350px; 
+    text-align: center;
+    
+}
+
+.galeria img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.volver:hover {
+    color: #ff0000;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: #ec1f1f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid red;
+}  
+
+#hero {
+    min-height:100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    border-radius: 20px;
+}
