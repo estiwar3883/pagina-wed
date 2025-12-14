@@ -173,3 +173,42 @@ video {
     mix-blend-mode: overlay;
     border-radius: 20px;
 }
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    margin: 30px 70px;
+    background-color: black;
+    padding: 50px;
+    border: 1px solid rgb(241, 238, 238);
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    border: 4px solid rgb(240, 234, 234);
+    margin: 15px;
+    text-align: center;
+    line-height: 150px;
+
+}
+
+.caja img{
+    width: 100%;
+    height: 100%;
+}
+
+.caja{
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.caja:hover {
+    cursor: crosshair;
+    transform: scale(1.1); 
+    opacity: 1;
+    filter: contrast(120%);
+}
