@@ -1,0 +1,380 @@
+/* ---------- Estilos globales ---------- */
+:root {
+    --color-principal: #e60000;
+    --color-fondo: #000;
+    --color-texto: #fff;
+    --fuente-base: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--fuente-base);
+    margin: 0;
+    background: rgb(61, 58, 58);
+    color: var(--color-texto);
+    position: relative;
+    z-index: 2;
+    overflow-y: auto;
+
+}
+
+header {
+    color: var(--color-texto);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+#proyectos li,a{
+    text-decoration: none;
+    color: var(--color-texto);
+    padding: 10px;
+    margin: 0px;
+}
+#proyectos li,a:hover{
+    color: var(--color-principal);
+}
+/* ---------- Menú de navegación ---------- */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul li a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--color-principal);
+
+}
+
+/* ---------- Secciones ---------- */
+section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 80px;
+}
+
+h2 {
+    color: var(--color-principal);
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+}
+
+/* ---------- Formulario ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+button {
+    background: var(--color-principal);
+    color: var(--color-texto);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+button:hover {
+    background: var(--color-principal);
+}
+
+/* ---------- Estilos para página de mascotas ---------- */
+.galeria {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.galeria article {
+    background: rgb(10, 10, 10);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(116, 0, 0, 0.2);
+    width: 350px;
+    height: 350px; 
+    text-align: center;
+    
+}
+
+.galeria img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+.volver:hover {
+    color: var(--color-principal);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background: var(--color-principal);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 3px solid var(--color-principal);
+}  
+
+#hero {
+    min-height:100vh;
+    position: relative;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    image-rendering: auto;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    filter: brightness(1.05) contrast(1.05);
+}
+
+.capa {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    pointer-events: none;
+
+}
+
+.video-fondo {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.capa-2 {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    margin: 30px auto;
+    background-color: black;
+    padding: 50px;
+    border: 1px solid var(--color-texto);
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;   
+    padding: 20px;
+    z-index: 1;
+}
+
+main.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+
+.caja {
+    width: 200px;
+    height: 200px;
+    border: 4px solid var(--color-texto);
+    margin: 15px;
+    text-align: center;
+    line-height: 150px;
+
+}
+
+.caja img{
+    width: 100%;
+    height: 100%;
+}
+
+.caja{
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.caja:hover {
+    cursor: crosshair;
+    transform: scale(1.1); 
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+@media (max-width: 480px) {
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria article {
+        width: 95%;
+        height: auto;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .caja {
+        height: 180px;
+    }
+
+    #hero {
+        min-height: 50vh;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria article {
+        width: 90%;
+        height: auto;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+        width: 90%;
+        padding: 25px;
+    }
+
+    .caja {
+        height: 220px;
+    }
+
+    #hero {
+        min-height: 60vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .galeria {
+        flex-wrap: wrap;
+    }
+
+    .galeria article {
+        width: 45%;
+        height: 320px;
+    }
+
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+
+    .caja {
+        height: 260px;
+    }
+
+    #hero {
+        min-height: 80vh;
+    }
+}
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 10px;
+    }
+
+    .grid-layout {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #proyectos ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #proyectos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
